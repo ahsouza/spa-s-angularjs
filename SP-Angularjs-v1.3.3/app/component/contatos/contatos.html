@@ -1,0 +1,40 @@
+<div class="container">
+  <table class="table table-striped table-bordered">
+        <tr>
+          <td>Nome</td>
+          <td>
+            <input type="text" class="form-control" ng-model="contato.nome"  placeholder="Digite o nome do contato" /></td>
+        </tr>
+        <tr>
+          <td class="text-right" colspan="2">
+            <button ng-click="add(contato)" class="btn btn-primary">
+                adicionar
+            </button>
+          </td>
+        </tr>
+  </table>
+
+ <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Edit</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="contato in contatos">
+                <td><span ng-hide="editMode">{{contato.nome}}</span>
+                    <input type="text" ng-show="editMode" ng-model="contato.nome" />
+                </td>
+                <td>
+                    <i ng-hide="editMode" ng-click="editMode = true; edit(contato)" class="glyphicon glyphicon-edit"></i>
+                    <i class="glyphicon glyphicon-saved" ng-show="editMode" ng-click="editMode = false"></i>
+                </td>
+                <td>
+                    <i ng-click="remove($index)" class="glyphicon glyphicon-trash"></i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
