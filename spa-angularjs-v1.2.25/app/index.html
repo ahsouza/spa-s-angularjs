@@ -2,24 +2,28 @@
 <!-- define angular app -->
 <html ng-app="exemploApp">
 <head>
-  <script src="app.js"></script>
-  <script src="routes.js"></script>
-  <script src="/controllers/homeController.js"></script>
-  <script src="/controllers/sobreController.js"></script>
-  <script src="/controllers/contatoController.js"></script>
   <!-- SCROLLS -->
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
   <!-- SPELLS -->
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  <!-- Módulo Angularjs -->
+  <script src="app.js"></script>
+  <!-- Rotas com ngRoute -->
+  <script src="routes.js"></script>
+  <!--  Controllers da aplicação -->
+  <script src="controllers/HomeController.js"></script>
+  <script src="controllers/SobreController.js"></script>
+  <script src="controllers/ContatoController.js"></script>
+  
 </head>
 <!-- define angular controller -->
 <body ng-controller="homeController">
   <nav class="navbar navbar-default">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand" href="/">SP Angular Exemplo</a>
+        <a class="navbar-brand" href="/">SP Angular 1.2 Exemplo</a>
       </div>
 
       <ul class="nav navbar-nav navbar-right">
@@ -33,7 +37,7 @@
   <div id="main">
   
     <!-- angular templating -->
-		<!-- this is where content will be injected -->
+		<!-- Views injetadas -->
     <div ng-view></div>
     
   </div>
@@ -41,7 +45,6 @@
   <footer class="text-center">
     <small>Footer</small>
   </footer>
-  
 </body>
 
 </html>
