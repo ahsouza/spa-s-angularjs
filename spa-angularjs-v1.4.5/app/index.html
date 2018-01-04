@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="exemploApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Angularjs v1.4.5 com ngRoute & UI-Router</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+  <script src="app.js"></script>
+  <script src="routes.js"></script>
+  <script src="/contato/contato.controller.js"></script>
+  <script src="/contato/formulario/contato.form.controller.js"></script>
+  <script src="/sobre/sobre.controller.js"></script>
+  <script src="/home/home.controller.js"></script>
+  <script src="/404/404.controller.js"></script>
+
+    <base href="/">
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div>
+        <ul class="nav navbar-nav">
+          <li><a ui-sref="home">Inicio</a></li>
+          <li><a ui-sref="sobre">Sobre</a></li>
+          <li><a ui-sref="contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Container onde todo conteúdo será renderizado, permite o gerenciamento de includes das páginas de acordo com o caminho da URL atual solicitada. -->
+  <div ui-view></div>
+
+</body>
+</html>
