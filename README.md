@@ -47,7 +47,6 @@ Examples Single Pages apps with Angular.js.
 No configuration or complicated folder structures, just the files you need to build your app.<br>
 Once the installation is done, you can open your project folder:
 
-```
 The [AngularJS Guide](https://docs.angularjs.org/api) includes information on different topics.
 ## Examples of SPAs in different AngularJS versions
 
