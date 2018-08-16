@@ -1,4 +1,4 @@
-# SPAs in Angularjs
+# SPAs in Angular.js
 
 # Create Angular.js App [![Build Status](https://docs.angularjs.org/misc/started)](https://docs.angularjs.org/misc/started)
 
